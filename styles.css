@@ -167,6 +167,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
@@ -174,6 +175,11 @@ body {
     background: white;
     color: var(--primary-color);
     transform: translateY(-3px);
+}
+
+.hero-social a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 
 /* Section Styles */
@@ -686,11 +692,19 @@ section {
     color: var(--text-light);
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
 }
 
 .contact-card a:hover {
     color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.contact-card a:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 .contact-card p {
@@ -728,12 +742,18 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
 .footer-social a:hover {
     background: white;
     color: var(--primary-color);
+}
+
+.footer-social a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 
 /* Responsive Design */
